@@ -158,15 +158,13 @@ dien_tich_htr()
 console.log('Dien tich hinh tron',dien_tich_htr(5))
 
 function chu_vi_hcn(cd,cr){
-    cv_hcn=(cd+cr)*2
-    return cv_hcn
+    return cv_hcn=(cd+cr)*2
 }
 chu_vi_hcn()
 console.log('Chu vi hinh chu nhat',chu_vi_hcn(5,2))
 
 function dien_tich_hcn(cd,cr){
-    dt_hcn=cd*cr
-    return dt_hcn
+    return dt_hcn=cd*cr
 }
 chu_vi_hcn()
 console.log('Dien tich hinh chu nhat',dien_tich_hcn(5,2))
@@ -178,6 +176,48 @@ function b3f(s,t){
 }
 b3f()
 console.log('Van toc =',b3f(120,130))
+
+function b3g(v,t){
+    t=t/60
+    s=v*t
+    return s
+}
+b3f()
+console.log('Quang duong =',b3g(60,150))
+
+function b3h(v,t){
+    return s=v*t
+}
+b3h()
+console.log('Quang cano di trong 3gio =',b3h(15.2,3))
+
+function b3g(v,t){
+    t=t/60
+    return s=v*t
+}
+b3g()
+console.log('Quang duong AB=',b3g(42,160))
+
+function khoi1(a,b,h){
+    return v1=a*b*h
+}
+khoi1()
+function khoi2(a,b,h){
+    return v1=3*a*b*h
+}
+khoi2()
+console.log('The tich khoi 1 =',khoi1(8,5,6))
+console.log('The tich khoi 2 =',khoi2(8,5,6))
+console.log('The tich khoi =',khoi1(8,5,6)+khoi2(8,5,6))
+
+
+
+
+
+
+
+
+
 
 
 
