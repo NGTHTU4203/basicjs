@@ -12,7 +12,8 @@ console.log(tong)
 
 function min_max(arr){
     max=arr[0]
-    for (i = 1; i < arr.length; i++)
+    min=arr[0]
+    for (i = 0; i < arr.length; i++)
         if (max < arr[i])
             max = arr[i]
         if (min > arr[i])
@@ -170,11 +171,10 @@ function    tinh_tong_n_so_dau_tien(n){
 tinh_tong_n_so_dau_tien(200)
 
 function tinh_tong(arr2){
-    temp = arr2[0];
         for (i = 0 ; i < arr2.length - 1; i++) {
             for (j = i + 1; j < arr2.length; j++) {
                 if (arr2[i] < arr2[j]) {
-                    temp = arr2[j];
+                    let temp = arr2[j];
                     arr2[j] = arr2[i];
                     arr2[i] = temp;
                 }
@@ -183,8 +183,29 @@ function tinh_tong(arr2){
     console.log(arr2)
     tong=arr2[0]+arr2[1]+arr2[2]
     console.log(arr2[0],'+',arr2[1],'+',arr2[2],'=',tong)
-}
+    console.log('TB cua 3 so lon nhat =',tong/3)
+    let max = arr2[0]
+    so_be_nhat=arr2.length-1
+    let min =  arr2[so_be_nhat]
+    console.log('khoang cach MIN_MAX la:',max-min)
+}   
 tinh_tong(arr2)
+
+function Khoang_cach_min_max(arr2){
+    max=[0]
+    min=[0]
+    for (i = 0; i < arr2.length; i++)
+        {
+            if (max < arr2[i])
+                max = arr2[i]
+            if (min > arr2[i])
+                min = arr2[i]
+        }
+    console.log('MAX =',max)
+    console.log('MIN =',min)
+    console.log('khoang cach MIN_MAX la:',max-min)
+}
+Khoang_cach_min_max(arr2)
 
 
 
